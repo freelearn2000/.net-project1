@@ -28,7 +28,7 @@ jobs:
         run:  msbuild .\net-project1.sln
 
       - name: Publish to folder
-        run: msbuild .net-project1/net-project1.csproj /p:PublishUrl="c:\mysite" /p:DeployOnBuild=true /p:Configuration=Release /p:WebPublishMethod=FileSystem /p:DeployTarget=WebPublish /p:AutoParameterizationWebConfigConnectionStrings=false /p:SolutionDir="."
+        run: msbuild ASPNetCore\ASPNetCore.csproj /p:PublishUrl="c:\mysite" /p:DeployOnBuild=true /p:Configuration=Release /p:WebPublishMethod=FileSystem /p:DeployTarget=WebPublish /p:AutoParameterizationWebConfigConnectionStrings=false /p:SolutionDir="."
 
         
       -  name: Upload artifact for deployment job
