@@ -1,5 +1,4 @@
-name: FreeLearn App Build and Deploy
-
+name:  Build and Deploy using service principle
 on:
   push:
     branches:
