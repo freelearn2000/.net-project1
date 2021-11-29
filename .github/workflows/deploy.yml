@@ -24,7 +24,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Run MSBuild
-      run: msbuild .\gitsample3.sln
+      run: msbuild net-project1.sln
        
     - name: 'Run Azure webapp deploy action using publish profile credentials'
       uses: azure/webapps-deploy@v2
