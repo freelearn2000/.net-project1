@@ -1,4 +1,4 @@
-name: App Build and Deploy using service princi
+name: App Build and Deploy using service principal
 
 on:
   push:
