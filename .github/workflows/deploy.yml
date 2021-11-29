@@ -3,7 +3,7 @@ name: Deploy to azure using publish profile
 on: [push]
 
 env:
-  AZURE_WEBAPP_NAME: gitsample3    # set this to your application's name
+  AZURE_WEBAPP_NAME: net-project1    # set this to your application's name
   NUGET_VERSION: '5.3.x'           # set this to the dot net version to use
 
 jobs:
@@ -29,6 +29,6 @@ jobs:
     - name: 'Run Azure webapp deploy action using publish profile credentials'
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: ${{ env.gitsample3 }} # Replace with your app name
+        app-name: ${{ env.net-project1 }} # Replace with your app name
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
         package: .
